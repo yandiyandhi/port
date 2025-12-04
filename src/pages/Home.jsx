@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Theme Togle */}
-      <ThemeTogle />
+      {/* <ThemeTogle /> */}
       {/* Background Effects */}
       <StarBackground />
       {/* Navbar */}

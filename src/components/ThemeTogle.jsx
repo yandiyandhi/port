@@ -29,7 +29,7 @@ export const ThemeTogle = () => {
     <button
       onClick={togleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-100 p-2 rounded-full transition-colors duration-300",
+        "absolute top-5 md:top-4 right-2 md:right-5 z-100 p-2 rounded-full transition-colors duration-300",
         "focus:outline-hidden"
       )}
     >
