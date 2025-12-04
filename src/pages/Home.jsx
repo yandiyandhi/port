@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { AboutSection } from "../components/AboutSection";
 import { ContactSection } from "../components/ContactSection";
 import { HeroSection } from "../components/HeroSection";
@@ -9,6 +10,9 @@ import { StarBackground } from "../components/StarBackground";
 import { ThemeTogle } from "../components/ThemeTogle";
 
 export const Home = () => {
+  useEffect(() => {
+    document.title = "Portfolio Yandi Rosyandi";
+  }, []);
   return (
     <div className="min-h-screen">
       {/* Theme Togle */}
