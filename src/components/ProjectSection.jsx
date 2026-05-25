@@ -8,8 +8,7 @@ const projects = [
       "Sistem pemberian kredit yang dirancang untuk mempercepat proses analisis dan persetujuan.",
     image: "/projects/sipebri.png",
     tags: ["Laravel", "Bootstrap", "Mysql", "Sql Server"],
-    demoUrl: "https://sipebri.bprbangunarta.co.id",
-    githubUrl: "#",
+    demoUrl: "https://sipebri.pba.co.id",
   },
   {
     id: 2,
@@ -18,8 +17,7 @@ const projects = [
       "Sistem untuk memantau status kredit secara akurat, cepat, dan efisien.",
     image: "/projects/simontok.png",
     tags: ["Laravel", "Bootstrap", "Mysql", "Sql Server"],
-    demoUrl: "https://simontok.bprbangunarta.co.id",
-    githubUrl: "#",
+    demoUrl: "https://simontok.pba.co.id",
   },
   {
     id: 3,
@@ -28,18 +26,16 @@ const projects = [
       "Sistem pemberian kredit yang dirancang untuk mempercepat proses analisis dan persetujuan.",
     image: "/projects/postra.png",
     tags: ["Laravel", "Bootstrap", "Mysql", "Sql Server"],
-    demoUrl: "https://postra.bprbangunarta.co.id",
-    githubUrl: "#",
+    demoUrl: "https://postra.pba.co.id",
   },
   {
     id: 3,
     title: "Presensi",
     description:
       "Sistem presensi otomatis untuk mencatat kehadiran karyawan secara akurat real-time.",
-    image: "/projects/presensi.png",
+    image: "/projects/presensi.jpeg",
     tags: ["Laravel", "Bootstrap", "Mysql"],
-    demoUrl: "https://presensi.bprbangunarta.co.id",
-    githubUrl: "#",
+    demoUrl: "https://presensi.pba.co.id",
   },
 ];
 
@@ -51,7 +47,7 @@ export const ProjectSection = () => {
           Featured <span className="text-primary"> Projects </span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-justify text-muted-foreground mb-12 max-w-2xl mx-auto">
           Berikut adalah beberapa proyek terbaru saya. Setiap proyek dibuat
           dengan cermat, dengan perhatian pada detail, performa, dan pengalaman
           pengguna.
@@ -61,7 +57,7 @@ export const ProjectSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-md card-hover"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -73,15 +69,18 @@ export const ProjectSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-4 text-justify">
                   {project.description}
                 </p>
                 <div className="flex justify-between text-center">
@@ -92,13 +91,6 @@ export const ProjectSection = () => {
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="__blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
                     </a>
                   </div>
                 </div>

@@ -10,7 +10,7 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Fullstack Developer</h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-justify">
               Saya memiliki pengalaman di bidang IT sebagai Staff System
               Development, memiliki keahlian dalam analisis sistem, pengembangan
               aplikasi, serta pemeliharaan dan perbaikan sistem internal
@@ -18,7 +18,7 @@ export const AboutSection = () => {
               memiliki semangat belajar tinggi dan berorientasi pada
               penyelesaian masalah.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-justify">
               Dengan latar belakang bekerja di lingkungan perbankan, saya
               terbiasa dengan sistem yang kompleks dan menuntut ketelitian serta
               keamanan yang tinggi.
@@ -29,7 +29,8 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href="#"
+                href="https://drive.google.com/uc?export=download&id=10aBXqnEL_nDNDt0RPJNrsVzr0x2wTAEu"
+                target="_blank"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -45,7 +46,7 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> Web Developer</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-justify">
                     Membuat aplikasi web yang responsif dengan framework modern.
                   </p>
                 </div>
@@ -58,7 +59,7 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-justify">
                     Merancang antarmuka pengguna yang intuitif serta
                     menghadirkan pengalaman pengguna yang optimal.
                   </p>

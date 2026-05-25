@@ -1,4 +1,11 @@
-import { Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
 import { cn } from "../lib/utils";
 
 export const ContactSection = () => {
@@ -68,11 +75,28 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#">
-                  <Linkedin />
+                <a
+                  href="https://www.linkedin.com/in/yandi-rosyandi-395b92200/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="2x"
+                    className="text-blue-600"
+                  />
                 </a>
-                <a href="#">
-                  <Instagram />
+                <a
+                  href="https://www.instagram.com/yandiyandhi/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="2x"
+                    className="text-pink-500"
+                  />
+                </a>
+                <a href="https://github.com/yandiyandhi" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
               </div>
             </div>
@@ -138,7 +162,7 @@ export const ContactSection = () => {
               <button
                 type="submit"
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2",
                 )}
               >
                 Send <Send size={16} />
