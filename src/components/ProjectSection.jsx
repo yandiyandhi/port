@@ -8,7 +8,7 @@ const projects = [
       "Sistem pemberian kredit yang dirancang untuk mempercepat proses analisis dan persetujuan.",
     image: "/projects/sipebri.png",
     tags: ["Laravel", "Bootstrap", "Mysql", "Sql Server"],
-    demoUrl: "https://sipebri.pba.co.id",
+    demoUrl: "https://sipebri.bprbangunarta.co.id",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
       "Sistem untuk memantau status kredit secara akurat, cepat, dan efisien.",
     image: "/projects/simontok.png",
     tags: ["Laravel", "Bootstrap", "Mysql", "Sql Server"],
-    demoUrl: "https://simontok.pba.co.id",
+    demoUrl: "https://simontok.bprbangunarta.co.id",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
       "Sistem presensi otomatis untuk mencatat kehadiran karyawan secara akurat real-time.",
     image: "/projects/presensi.jpeg",
     tags: ["Laravel", "Bootstrap", "Mysql"],
-    demoUrl: "https://presensi.pba.co.id",
+    demoUrl: "https://presensi.bprbangunarta.co.id",
   },
 ];
 
